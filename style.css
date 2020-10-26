@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+div.space {
+  height: 25vh;
+}
+
+nav {
+  height: 10vh;
+  width: 100vw;
+  list-style: none;
+  position: fixed;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 2;
+}
+
+nav.two {
+  background: #3155a4;
+  position: fixed;
+}
+
+a.nav-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+.appear3 {
+  opacity: 1;
+  color: ;
+}
+
+.banner {
+  height: 100vh;
+  width: 100vw;
+
+  background: #b5b5b5;
+}
+
+.banner > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.banner-img {
+  height: 100%;
+  width: 100%;
+}
+
+.banner-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  text-align: center;
+  font-family: "Press Start 2P", cursive;
+  line-height: 75px;
+  letter-spacing: 10px;
+}
+
+.info {
+  display: grid;
+  grid-template-areas:
+    "wrapper1 para1"
+    "para2 wrapper2";
+  justify-items: center;
+  grid-row-gap: 20vh;
+}
+
+.info-img-wrapper-1 {
+  width: 600px;
+  height: 750px;
+  position: relative;
+  grid-area: "wrapper1";
+}
+
+.info-img-wrapper-2 {
+  display: flex;
+  flex-direction: row-reverse;
+
+  width: 600px;
+  height: 750px;
+  position: relative;
+  grid-area: "wrapper2";
+}
+
+.paragraph {
+  width: 600px;
+  font-size: 20px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.5s all ease-in;
+}
+
+#para1 {
+  grid-area: "para1";
+}
+
+.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#para2 {
+  grid-area: "para2";
+}
+
+.appear2 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.info-img {
+  width: 400px;
+  height: 500px;
+  background: #b5b5b5;
+}
+
+.info-img > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#info-img-2 {
+  background: #c5c5c5;
+
+  position: absolute;
+  left: 30%;
+  top: 25%;
+}
+
+#info-img-4 {
+  background: #c5c5c5;
+
+  position: absolute;
+  left: 0;
+  top: 25%;
+}
+
+#info-img-3 img {
+  object-position: center;
+}
+
+.footer {
+  background-color: #000;
+  width: 100vw;
+  height: 40vh;
+}
+
+.footer > p {
+  color: white;
+}
